@@ -10,6 +10,8 @@ exit_price_integer = float(exit_price)
 
 # Calculate investment return %
 roi = (exit_price_integer / entry_price_integer - 1) * 100
+rounded_roi = round(roi,2)
+# rounded_roi_as_string = str(rounded_roi)
 
 # Show return %
-print(roi) 
+print(f"{rounded_roi} %") 
